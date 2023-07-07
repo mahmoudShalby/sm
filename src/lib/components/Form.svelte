@@ -6,7 +6,7 @@
                action: string
 </script>
 
-<form method='post' action={action} transition:fade class="container w-[max(25vw,256px)]">
+<form method='post' action={action} class="container w-[max(25vw,256px)]">
     <h1 class="text-3xl">{title}</h1>
     {#each inputs as {name, type}}
         <div class="flex-y">
