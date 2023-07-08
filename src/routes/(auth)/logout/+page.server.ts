@@ -1,7 +1,7 @@
-import { supabase } from "$lib/supabaseClient"
-import { redirect } from "@sveltejs/kit"
+import { supabase } from '$lib/supabaseClient'
+import { redirect } from '@sveltejs/kit'
 
 export const load = () => {
-    supabase.auth.signOut()
-    throw redirect(308, '/auth')
+	supabase.auth.signOut()
+	throw redirect(308, '/auth')
 }
